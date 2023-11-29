@@ -1,9 +1,126 @@
 @extends('layout.app')
 @section('appContent')
-    <h1>Home</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illum ducimus explicabo atque iure quos asperiores accusamus tempore voluptas quaerat? In nostrum dolores aperiam alias vero ipsa ab voluptatum porro libero, ullam, consectetur corrupti! Officia ratione, magnam iste et, odit qui similique sit possimus incidunt culpa cum tempora explicabo delectus nulla non nam accusamus architecto illo, perferendis veritatis hic ipsa consequuntur quaerat provident? Nihil amet, quod a, magnam vel tempore facere consectetur unde eligendi fuga doloremque inventore ab recusandae culpa nobis in? Quos porro aspernatur maiores explicabo sunt illo nemo, consectetur veniam voluptatum molestias officiis perspiciatis ducimus magnam inventore neque.</p>
-    <p>Mollitia consequuntur nulla tempora reprehenderit, id modi fugiat, architecto tempore sint iste ad sit dolores autem dolorem ipsa. Adipisci tenetur magni hic repudiandae error dolore voluptatem neque. Necessitatibus in culpa repellat ab sint dolores iste qui ducimus similique perferendis quis nulla, velit ratione, iure commodi pariatur voluptatibus maiores fugiat? Aperiam, iste pariatur aliquam officiis voluptatibus praesentium maxime reiciendis perferendis optio minus impedit quae at quidem laboriosam perspiciatis odio dicta labore minima. Mollitia quibusdam officia praesentium obcaecati quia repellendus quisquam, iusto amet nulla earum. Enim quae doloribus, quo voluptate culpa maxime sint fuga officiis sit qui ducimus ipsa odio distinctio quam.</p>
-    <p>Nemo minus tenetur cum, iure aut quam aliquam dolor consequatur quisquam ad beatae dolorum quis nam eligendi sunt totam. Vel corrupti impedit, debitis, accusamus nesciunt nulla quam quas quasi, earum qui ex architecto sint totam corporis et nemo praesentium atque. Deleniti accusamus facilis veniam consectetur magnam provident repellat quos, rem impedit, officia doloremque est aspernatur deserunt in quo maiores recusandae sunt. Libero blanditiis molestias ipsam provident, aut, nam est fugit odio quam minus dolorem perferendis dolores? Dolorem, doloribus! Nam, tenetur dolor. Deleniti in aut rem at, ea voluptatum, unde non, aliquam maxime labore minima. Asperiores consequatur sed sapiente fugiat est.</p>
-    <p>Tenetur sed rerum laboriosam, velit mollitia dolor obcaecati sapiente facere maxime iste tempore molestias odit eos deleniti tempora voluptatum eaque numquam et minima sint repellendus optio eum dolorem. Vel accusantium velit obcaecati maxime reprehenderit, libero sapiente, maiores corporis repudiandae ullam laudantium eveniet praesentium fugit voluptatum distinctio expedita dolorum? Reprehenderit enim ea possimus dolor dolorem libero pariatur, temporibus repudiandae molestiae id alias eaque, explicabo at corporis sit incidunt architecto velit quis blanditiis voluptas sint itaque eligendi beatae sed! Doloribus sint enim obcaecati praesentium? Ea, corrupti asperiores necessitatibus laborum eius, facere magni fugit, modi assumenda error possimus ullam delectus blanditiis cum commodi!</p>
-    <p>Temporibus, neque nihil? Iusto tenetur, temporibus nesciunt ratione velit consequatur, voluptates optio delectus inventore vel dicta. Reprehenderit vero sunt suscipit ab! Repellendus maxime iusto eius expedita sed, voluptatum id saepe? In accusantium, quibusdam hic ullam at necessitatibus aspernatur harum placeat veniam odio illo numquam quos nihil excepturi veritatis esse omnis dolorem vero, quia iusto sapiente rerum qui quod soluta. Odit inventore deleniti iure earum distinctio expedita reiciendis explicabo autem rerum consequatur totam aut dicta, pariatur doloremque suscipit quas architecto optio laboriosam libero perspiciatis velit nisi minus ullam quod. Asperiores iste similique enim quod, libero beatae quisquam architecto aut necessitatibus illo.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #848181;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .image-slideshow {
+        /* margin-top: 20px */
+            max-width: 80%;
+            position: relative;
+            margin: auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-top: 20px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .image img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-bg {
+            background-color: #ddd; /* Light gray background */
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-slideshow">
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma1.jpg" alt="Mountain Top">
+            </div>
+        </div>
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma2.jpg" alt="Palm Trees">
+            </div>
+        </div>
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma3.jpg" alt="Neon Sign">
+            </div>
+        </div>
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma4.jpg" alt="Mountain Top">
+            </div>
+        </div>
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma5.jpg" alt="Mountain Top">
+            </div>
+        </div>
+
+        <div class="image fade">
+            <div class="image-bg">
+                <img src="./images/ma6.jpg" alt="Mountain Top">
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let index = 0;
+        displayImages();
+
+        function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+
+            index++;
+
+            if (index > images.length) {
+                index = 1;
+            }
+
+            images[index - 1].style.display = "block";
+            setTimeout(displayImages, 2000);
+        }
+    </script>
+</body>
+</html>
 @endsection
